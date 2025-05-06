@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/styleModal.css">
+    <link rel="stylesheet" href="CSS/styleContactForm.css">
+    <title>Siu Hong CHEUNG Portfolio Website</title>
+</head>
+<body>
+    <header id="top">
+        <div class="header-container">
+            <h1>Siu Hong CHEUNG</h1>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="side-container">
+            <nav class="navBar">
+                <ul>
+                    <li><a href="#story" class="navItem" onclick="toggleLink(this)">About</a></li>
+                    <li><a href="#educationCard" class="navItem" onclick="toggleLink(this)">Education</a></li>
+                    <li><a href="#workingExperienceCard" class="navItem" onclick="toggleLink(this)">Work Experience</a></li>
+                    <li><a href="#projectCard" class="navItem" onclick="toggleLink(this)">Project</a></li>
+                </ul>
+            </nav>
+            <nav class="contactBar">
+                <ul class="navIcon">
+                    <li><a href="/cdn-cgi/l/email-protection#385f55595154165b5755"><img src="https://img.icons8.com/?size=100&id=12623&format=png&color=FFFFFF" style="width:36px; height:36px;"></a></li>
+                    <li><a href="https://github.com/sonnyguy817"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=FFFFFF" style="width:36px; height:36px;"></a></li>
+                    <li><a href="https://www.linkedin.com/in/hong-csh-b3b467322/"><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF" style="width:36px; height:36px;"></a></li>
+                </ul>
+            </nav>
+            <form class="contactMeForm" method="POST" action="mailto:sonnyguy17@gmail.com" enctype="text/plain">
+                <div class="form-inputs">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                    <input type="submit" value="Send me a message!">
+                </div>
+            </form>
+        </aside>
+        <main>
+            <section id="story">
+                <article>
+                    <div class="story-container">
+                        <h2>About Me..</h2>
+                        <p>In 2020, I took a <span>Python</span> course that sparked my interest in coding and everything related to it. After that, to learn more, explore further, and strengthen my foundation, I enrolled in <span>HKMU's</span> Computer Science and Networking degree, focusing on <span>Java</span>, <span>JavaScript</span>, and some web-related knowledge.</p>
+                        <p>During that time, I was working in banking, and later I started a catering business with some partners. Both experiences taught me how to handle things independently and encouraged me to keep learning and getting better.</p>
+                        <p>Even with a packed schedule, I still find time to practice coding. You can take a look at my projects to see what I've worked on.</p>
+                    </div>
+                </article>
+            </section>
+            <section id="educationCard">
+                <article>
+                    <div class="education-container">
+                        <h2>Education</h2>
+                        <a href="https://www.hkmu.edu.hk/st/computing/programmes/part-time/undergraduate/5-credit-unit/bsccn-bschcn/" class="card-link">
+                            <div id="education-HKMU">
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <h3>Bachelor of Science in Computer Science</h3>
+                                    <img style="width:24px; height:100%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANxJREFUSEvtlesNwjAQg91NYBO6CUwCTMIodJRuAjVKquiSSyz6kJDIn6pV5O/Oca4dNl7dxvrYHXAC8ABwKHR2A3AP36/Tk+/emgu3HTwBEOItFeICXkFZtc7rZDUArWTX1tJVABTledHS0UAWA6z4EUBq1yJASTyGIkK+BtTEU0iMc3bRailSxLN42zh6AFWcFs3Vk6YCziExTAsP1FssML2MMoCCWXUFSuaA2oE6dP+AplNNi1rjukmYZtMAoI8b7SFzcDEttX9CDcIYXwLks0+d+0rlxT2/D3gDqAA1GfNX0DYAAAAASUVORK5CYII="/>
+                                </div>
+                                <p>Expected Graduation - Jul 2025</p>
+                                <p>Bachelor of Science in Computing and Networking</p>
+                                <ul>
+                                    <li>Java Programming</li>
+                                    <li>Website Design</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="https://danger.education/data-science-and-programming-academy-tc/" class="card-link">
+                            <div id="education-danger">
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <h3>Danger Education</h3>
+                                    <img style="width:24px; height:100%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANxJREFUSEvtlesNwjAQg91NYBO6CUwCTMIodJRuAjVKquiSSyz6kJDIn6pV5O/Oca4dNl7dxvrYHXAC8ABwKHR2A3AP36/Tk+/emgu3HTwBEOItFeICXkFZtc7rZDUArWTX1tJVABTledHS0UAWA6z4EUBq1yJASTyGIkK+BtTEU0iMc3bRailSxLN42zh6AFWcFs3Vk6YCziExTAsP1FssML2MMoCCWXUFSuaA2oE6dP+AplNNi1rjukmYZtMAoI8b7SFzcDEttX9CDcIYXwLks0+d+0rlxT2/D3gDqAA1GfNX0DYAAAAASUVORK5CYII="/>
+                                </div>
+                                <p>Python Explore & Practitioner Courses</p>
+                                <p>Sep 2020 - Jan 2021</p>
+                                <ul>
+                                    <li>Python Programming</li>
+                                    <li>Data Analysis</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <div id="education-HKCT" class="card-link">
+                            <h3>Higher Diploma in Hong Kong College of Technology</h3>
+                            <p>Graduated in 2012</p>
+                            <p>Higher Diploma in Tourism Management (Hospitality)</p>
+                            <p>Graduated in 2009</p>
+                            <p>Associate Diploma (Business Studies)</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="projectCard">
+                <article>
+                    <div class="project-container">
+                        <h2>Projects</h2>
+                        <div class="card-link">
+                            <div class="project-card">
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <h3>Big Two Game Calculator</h3>
+                                    <img style="width:24px; height:100%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANxJREFUSEvtlesNwjAQg91NYBO6CUwCTMIodJRuAjVKquiSSyz6kJDIn6pV5O/Oca4dNl7dxvrYHXAC8ABwKHR2A3AP36/Tk+/emgu3HTwBEOItFeICXkFZtc7rZDUArWTX1tJVABTledHS0UAWA6z4EUBq1yJASTyGIkK+BtTEU0iMc3bRailSxLN42zh6AFWcFs3Vk6YCziExTAsP1FssML2MMoCCWXUFSuaA2oE6dP+AplNNi1rjukmYZtMAoI8b7SFzcDEttX9CDcIYXwLks0+d+0rlxT2/D3gDqAA1GfNX0DYAAAAASUVORK5CYII="/>
+                                </div>
+                                <p>A self-developed tool to calculate scores and track gameplay for the card game Big Two.</p>
+                                <div class="tool-container">
+                                    <span class="tool">Java</span>
+                                    <span class="tool">Android Studio</span>
+                                    <span class="tool">SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-link">
+                            <div class="project-card">
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <h3>To-Do List with AI</h3>
+                                    <img style="width:24px; height:100%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANxJREFUSEvtlesNwjAQg91NYBO6CUwCTMIodJRuAjVKquiSSyz6kJDIn6pV5O/Oca4dNl7dxvrYHXAC8ABwKHR2A3AP36/Tk+/emgu3HTwBEOItFeICXkFZtc7rZDUArWTX1tJVABTledHS0UAWA6z4EUBq1yJASTyGIkK+BtTEU0iMc3bRailSxLN42zh6AFWcFs3Vk6YCziExTAsP1FssML2MMoCCWXUFSuaA2oE6dP+AplNNi1rjukmYZtMAoI8b7SFzcDEttX9CDcIYXwLks0+d+0rlxT2/D3gDqAA1GfNX0DYAAAAASUVORK5CYII="/>
+                                </div>
+                                <p>A To-Do List app integrated with a personal growth system, leveraging AI to analyze user data and provide personalized insights.</p>
+                                <div class="tool-container">
+                                    <span class="tool">Java</span>
+                                    <span class="tool">Android Studio</span>
+                                    <span class="tool">SQL</span>
+                                    <span class="tool">HuggingFace API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="workingExperienceCard">
+                <article>
+                    <div class="working-container">
+                        <h2>Employment History</h2>
+                        <div id="experience-linglung-card" class="card-link">
+                            <h3>Ling Lung Catering Restaurant</h3>
+                            <h3>Sep 2023 - Apr 2025</h3>
+                            <p>Co-Owner</p>
+                            <ul>
+                                <li>Oversee company administration, accounting, and human resources.</li>
+                                <li>Ensure smooth daily operations, problem-solving.</li>
+                                <li>Identify customer preferences and new business opportunities.</li>
+                            </ul>
+                        </div>
+                        <div id="experience-hsbc-card" class="card-link">
+                            <h3>HSBC</h3>
+                            <h3>Nov 2016 - Jul 2023</h3>
+                            <p>Assistant Premier Manager & various posts</p>
+                            <ul>
+                                <li>Collaborate with branch colleagues to develop and nurture customer relationships.</li>
+                                <li>Support Premier Relationship Managers to conduct customer needs activity planning.</li>
+                                <li>Provide efficient and professional service to customers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br>
+            <br>
+        </main>
+        <button class="backToTop">Top</button>
+    </div>
+    <section>
+        <div class="modal" id="projectModal" role="dialog" aria-labelledby="modalTitle">
+            <div class="modal-content">
+                <span class="modal-close" tabindex="0" aria-label="Close modal">&times;</span>
+                <div class="modal-header">
+                    <img src="icon/pokerTransparent.png" alt="Project Icon" class="modal-icon" id="modalIcon">
+                    <h2 id="modalTitle"></h2>
+                </div>
+                <p id="modalDescription"></p>
+                <div class="bigtwoGallery">
+                    <div class="carousel">
+                        <div class="slides-container"></div>
+                        <button class="prev" aria-label="Previous slide">&lt;</button>
+                        <button class="next" aria-label="Next slide">&gt;</button>
+                        <div class="nav-dots-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
