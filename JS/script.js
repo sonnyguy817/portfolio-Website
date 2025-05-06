@@ -8,7 +8,6 @@ const modalIcon = document.querySelector('#modalIcon');
 const imageContainer = document.querySelector('.slides-container');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
-
 const projectData = [
     {
         title: 'Big Two Game Calculator',
@@ -73,7 +72,6 @@ function initializeSlideshow() {
     navDotsList = dotsContainer.querySelectorAll('.dot');
 }
 
-// Touch gesture support
 function handleTouchStart(e) {
     touchStartX = e.changedTouches[0].screenX;
 }
@@ -94,7 +92,6 @@ function handleTouchEnd() {
     }
 }
 
-// Focus trapping
 function trapFocus(e) {
     const focusableElements = modal.querySelectorAll('button, [tabindex="0"]');
     const firstElement = focusableElements[0];
@@ -111,7 +108,6 @@ function trapFocus(e) {
     }
 }
 
-// Button listeners (added once)
 nextBtn.addEventListener('click', () => {
     if (!slideImages || slideImages.length === 0) return;
     currentIndex = (currentIndex + 1) % slideImages.length;
@@ -123,7 +119,6 @@ prevBtn.addEventListener('click', () => {
     updateSlide();
 });
 
-// Project card click handler
 projectCardList.forEach((card, index) => {
     card.addEventListener('click', () => {
         const data = projectData[index];
@@ -157,7 +152,6 @@ projectCardList.forEach((card, index) => {
     });
 });
 
-// Close modal handlers
 function closeModalHandler() {
     modal.classList.remove('modal--open');
     document.body.style.overflow = '';
@@ -186,7 +180,6 @@ window.addEventListener('keydown', (event) => {
     }
 });
 
-// Back to top
 const backToTopButton = document.querySelector('.backToTop');
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -195,12 +188,11 @@ window.addEventListener('scroll', () => {
     backToTopButton.style.display = window.scrollY > 200 ? 'block' : 'none';
 });
 
-// NavIcon links
+
 document.querySelectorAll('.navIcon a').forEach(link => {
     link.setAttribute('target', '_blank');
 });
 
-// Toggle link
 function toggleLink(element) {
     document.querySelectorAll('.navItem').forEach(item => item.classList.remove('selected'));
     element.classList.add('selected');
