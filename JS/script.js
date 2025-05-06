@@ -12,15 +12,15 @@ const nextBtn = document.querySelector('.next');
 const projectData = [
     {
         title: 'Big Two Game Calculator',
-        description: 'This project is a score calculator for the card game Big Two. It tracks gameplay, calculates scores based on card combinations, and provides a user-friendly interface for players. Built with Java and Android Studio, it helped me practice my programming skills and learn about game logic implementation.',
+        description: 'This project is a score calculator for the card game Big Two. It tracks gameplay, calculates scores based on user input remainings cards, and provides a user-friendly interface for players. Built with Java and Android Studio, it helped to practice my programming skills and learn about game logic implementation.',
         icon: 'icon/pokerTransparent.png',
         images: ['icon/bigtwo-1.png', 'icon/bigtwo-2.png', 'icon/bigtwo-3.png', 'icon/bigtwo-4.png', 'icon/bigtwo-5.png']
     },
     {
         title: 'To-Do List with AI',
-        description: 'A To-Do List app integrated with a personal growth system, leveraging AI to analyze user data and provide personalized insights.',
+        description: 'A To-Do List app integrated with a personal growth system, leveraging AI to analyze user inputted todo-task and provide personalized insights. Using free AI Model API on HuggingFace. The user growth values can been seen in the apps.',
         icon: 'icon/todoIcon.png',
-        images: ['icon/todo-1.png']
+        images: ['icon/todo-1.png','icon/todo-2.png','icon/todo-3.png']
     }
 ];
 
