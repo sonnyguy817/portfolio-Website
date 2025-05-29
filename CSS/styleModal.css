@@ -1,4 +1,7 @@
 /* Modal container */
+#modalDescription {
+    line-height: 2.5;
+}
 .modal {
     display: none;
     position: fixed;
@@ -11,6 +14,11 @@
     overflow: auto;
     opacity: 0;
     transition: opacity 0.3s ease;
+}
+
+.modal-content span {
+    color: white;
+    font-weight: bold;
 }
 
 .modal--open {
@@ -111,12 +119,14 @@
 }
 
 .slide {
-    flex: 0 0 33.33%; /* Show ~3 images side by side */
-    width: 33.33%; /* Adjust based on visible images */
+    flex: 0 0 33.33%;
+    width: 40%;
     height: 100%;
     border-radius: 8px;
-    object-fit: contain; /* Preserve aspect ratio */
+    object-fit: contain;
 }
+
+
 
 /* Navigation dots */
 .nav-dots-container {

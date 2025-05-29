@@ -11,15 +11,25 @@ const nextBtn = document.querySelector('.next');
 const projectData = [
     {
         title: 'Big Two Game Calculator',
-        description: 'This project is a score calculator for the card game Big Two. It tracks gameplay, calculates scores based on user input remainings cards, and provides a user-friendly interface for players. Built with Java and Android Studio, it helped to practice my programming skills and learn about game logic implementation.',
+        description: 'This project is a score calculator for the card game Big Two. ' +
+                        'It is a native android app built with <span>Java</span> in <span>Android Studio</span>, the gaming data is stored in the local <span>SQLite</span> Database of the device. The game history can be viewd in the app. ' +
+                        'It tracks gameplay and calculates scores based on user input remainings cards, and provides a user-friendly interface for players.',
         icon: 'icon/pokerTransparent.png',
         images: ['icon/bigtwo-1.png', 'icon/bigtwo-2.png', 'icon/bigtwo-3.png', 'icon/bigtwo-4.png', 'icon/bigtwo-5.png']
     },
     {
         title: 'To-Do List with AI',
-        description: 'A To-Do List app integrated with a personal growth system, leveraging AI to analyze user inputted todo-task and provide personalized insights. Using free AI Model API on HuggingFace. The user growth values can been seen in the apps.',
+        description: 'A dynamic To-Do List web app with an integrated personal growth system, powered by AI. It is built with <span>Java</span> in <span>Android Studio</span>, The app leverages Hugging Face\'s free chatbot API to analyze user tasks, ' + 
+                        'sort them, and offer simple tips to boost productivity and personal growth. '+
+                        'Users can track their progress through a scoring system that reflects task completion and growth metrics.',
         icon: 'icon/todoIcon.png',
         images: ['icon/todo-1.png','icon/todo-2.png','icon/todo-3.png']
+    },
+    {
+        title: 'Weather Forecast App',
+        description: 'A weather app that displays the current weather and forecast for a specific location. It is built with <span>Dart</span> and <span>Flutter</span>, using the <span>OpenWeatherMap API</span> to fetch weather data. Also, provide a activities recommendation based on the weather.',
+        icon: 'icon/weatherIcon.png',
+        images: ['icon/weather-home.gif', 'icon/weather-1.jpg', 'icon/weather-2.jpg', 'icon/weather-3.jpg']
     }
 ];
 
@@ -126,7 +136,7 @@ projectCardList.forEach((card, index) => {
 
         currentIndex = 0;
         modalTitle.textContent = data.title;
-        modalDescription.textContent = data.description;
+        modalDescription.innerHTML = data.description;
         modalIcon.src = data.icon;
 
         imageContainer.innerHTML = '';
