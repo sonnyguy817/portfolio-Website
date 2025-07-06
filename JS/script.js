@@ -11,7 +11,7 @@ const nextBtn = document.querySelector('.next');
 const projectData = [
         {
         title: 'PetStore Online Reservation App',
-               description: 'A hybrid mobile application built with <span>Flutter</span> and <span>Dart</span> for pet owners to manage pet care services. ' +
+        description: 'A hybrid mobile application built with <span>Flutter</span> and <span>Dart</span> for pet owners to manage pet care services. ' +
                     'It integrates <span>Firebase</span> for secure user authentication and real-time data storage. ' +
                     'Key features include:<br>' +
                     '<a href=https://coffee-app-2d6c2.web.app/ target="_blank">Click me to discover more about this app...</a>' +
@@ -22,8 +22,8 @@ const projectData = [
                     '<li>Pet news and Pet tips section. </li>' +
                     '<li>Pet community, allow user share their pet photo.</li>' +
                     '</ul>',
-                    icon: 'icon/icon_rmbg.png',
-        images: ['icon/bigtwo-1.png', 'icon/bigtwo-2.png', 'icon/bigtwo-3.png', 'icon/bigtwo-4.png', 'icon/bigtwo-5.png']
+        icon: 'icon/icon_rmbg.png',
+        images: ['icon/petStore_1.jpg', 'icon/petStore_2.jpg', 'icon/petStore_3.jpg', 'icon/petStore_4.jpg', 'icon/petStore_5.jpg']
     },
     {
         title: 'Big Two Game Calculator',
