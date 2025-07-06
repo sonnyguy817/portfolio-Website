@@ -9,11 +9,33 @@ const imageContainer = document.querySelector('.slides-container');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 const projectData = [
+        {
+        title: 'PetStore Online Reservation App',
+               description: 'A hybrid mobile application built with <span>Flutter</span> and <span>Dart</span> for pet owners to manage pet care services. ' +
+                    'It integrates <span>Firebase</span> for secure user authentication and real-time data storage. ' +
+                    'Key features include:<br>' +
+                    '<a href=https://coffee-app-2d6c2.web.app/ target="_blank">Click me to discover more about this app...</a>' +
+                    '<ul style="margin-left: 20px; line-height: 1.6;">' +
+                    '<li>Member registration via email or Google Sign-In.</li>' +
+                    '<li>Profile management to update phone, email, and password with real-time validation.</li>' +
+                    '<li>Real-time booking system to schedule and cancel pet care services.</li>' +
+                    '<li>Pet news and Pet tips section. </li>' +
+                    '<li>Pet community, allow user share their pet photo.</li>' +
+                    '</ul>',
+                    icon: 'icon/icon_rmbg.png',
+        images: ['icon/bigtwo-1.png', 'icon/bigtwo-2.png', 'icon/bigtwo-3.png', 'icon/bigtwo-4.png', 'icon/bigtwo-5.png']
+    },
     {
         title: 'Big Two Game Calculator',
         description: 'This project is a score calculator for the card game Big Two. ' +
                         'It is a native android app built with <span>Java</span> in <span>Android Studio</span>, the gaming data is stored in the local <span>SQLite</span> Database of the device. The game history can be viewd in the app. ' +
-                        'It tracks gameplay and calculates scores based on user input remainings cards, and provides a user-friendly interface for players.',
+                        'It tracks gameplay and calculates scores based on user input remainings cards, and provides a user-friendly interface for players.'+
+                        'Key features include:<br>' +
+                        '<ul style="margin-left: 20px; line-height: 1.6;">' +
+                        '<li>Score calculation based on remaining cards.</li>' +
+                        '<li>Real-time game history tracking via SQL database.</li>' +
+                        '<li>Intuitive user interface for easy input.</li>' +
+                        '<li>Real-time score updates during gameplay.</li>',
         icon: 'icon/pokerTransparent.png',
         images: ['icon/bigtwo-1.png', 'icon/bigtwo-2.png', 'icon/bigtwo-3.png', 'icon/bigtwo-4.png', 'icon/bigtwo-5.png']
     },
@@ -21,7 +43,11 @@ const projectData = [
         title: 'To-Do List with AI',
         description: 'A dynamic To-Do List web app with an integrated personal growth system, powered by AI. It is built with <span>Java</span> in <span>Android Studio</span>, The app leverages Hugging Face\'s free chatbot API to analyze user tasks, ' + 
                         'sort them, and offer simple tips to boost productivity and personal growth. '+
-                        'Users can track their progress through a scoring system that reflects task completion and growth metrics.',
+                        'Users can track their progress through a scoring system that reflects task completion and growth metrics.'+
+                        'Key features include:<br>' +
+                        '<ul style="margin-left: 20px; line-height: 1.6;">' +
+                        '<li>Task management with AI-driven analysis.</li>' +
+                        '<li>Personal growth tips based on task analysis.</li>',
         icon: 'icon/todoIcon.png',
         images: ['icon/todo-1.png','icon/todo-2.png','icon/todo-3.png']
     },
